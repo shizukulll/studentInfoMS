@@ -33,7 +33,7 @@ public class studentDaoImpl implements studentDao {
             e.printStackTrace();
         } finally {
             DatabaseBean.close(rs,pstmt,conn);
-        }
+        }//ljy
         if(isSuccess == 1){
             return true;
         }else{
@@ -57,7 +57,7 @@ public class studentDaoImpl implements studentDao {
         }
         if(isSuccess == 1){
             return true;
-        }else{
+        }else{//ljy
             return false;
         }
     }
