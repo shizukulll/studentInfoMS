@@ -30,7 +30,7 @@ public class searchPanel extends UIFrame {
 
         JTextField nameText = new JTextField(20);
         nameText.setBounds(100,20,165,25);
-        panel.add(nameText);
+        panel.add(nameText);//ljy
 
         JTextArea resultTextArea = new JTextArea();
         JScrollPane scrollPane = new JScrollPane(resultTextArea);
@@ -52,7 +52,7 @@ public class searchPanel extends UIFrame {
                     }
                     resultTextArea.setText(sb.toString());
                     Dialog dialog = new Dialog("查询成功", 1);
-                    dialog.pack();
+                    dialog.pack();//ljy
                     dialog.setLocationRelativeTo(null);
                     dialog.setVisible(true);
                 }else{
