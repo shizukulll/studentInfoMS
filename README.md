@@ -7,7 +7,10 @@
 * **工厂模式**：通过专门的类来创建其他类的实例，而不需要暴露具体的类构造和实现逻辑。在学生信息管理系统中，工厂模式可以用于创建对象，提高了代码的灵活性和可扩展性(本系统只用来生产不同功能的面板)。
 
 ### 数据库创建
-··· CREATE TABLE admin (  
+
+
+```sql
+CREATE TABLE admin (  
     id VARCHAR(255) NOT NULL,  
     pwd VARCHAR(255),  
     name VARCHAR(255),  
@@ -23,6 +26,8 @@ CREATE TABLE student (
     PRIMARY KEY (id(191))  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-···
+
+```
+
 
 通过使用这些设计模式，我能够构建一个结构清晰、易于维护和扩展的学生信息管理系统。同时，利用MySQL数据库和Swing框架，系统还具备了良好的数据存储和用户交互能力。
