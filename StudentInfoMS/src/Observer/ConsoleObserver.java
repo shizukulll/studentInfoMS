@@ -6,7 +6,7 @@ public class ConsoleObserver implements Observer {
     private final PrintWriter writer;
 
     public ConsoleObserver() {
-        this.writer = new PrintWriter(System.out, true);
+        this.writer = new PrintWriter(System.out, true);//ljy
     }
 
     @Override
