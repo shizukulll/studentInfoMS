@@ -6,4 +6,23 @@
 * **观察者模式**：允许对象（被观察者）维护一组依赖于它的对象（观察者），当被观察者的状态发生变化时，所有依赖它的对象都会收到通知并自动更新。在学生信息管理系统中，这可以用于实现如当某个学生的信息更新时，所有关注该学生的界面或功能都能实时反映这种变化（但我只用于在控制台打印操作）。
 * **工厂模式**：通过专门的类来创建其他类的实例，而不需要暴露具体的类构造和实现逻辑。在学生信息管理系统中，工厂模式可以用于创建对象，提高了代码的灵活性和可扩展性(本系统只用来生产不同功能的面板)。
 
+### 数据库创建
+··· CREATE TABLE admin (  
+    id VARCHAR(255) NOT NULL,  
+    pwd VARCHAR(255),  
+    name VARCHAR(255),  
+    PRIMARY KEY (id(191))  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE student (  
+    id VARCHAR(255) NOT NULL,  
+    name VARCHAR(255),  
+    age VARCHAR(255),  
+		sex VARCHAR(255), 
+		major VARCHAR(255), 
+    PRIMARY KEY (id(191))  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+···
+
 通过使用这些设计模式，我能够构建一个结构清晰、易于维护和扩展的学生信息管理系统。同时，利用MySQL数据库和Swing框架，系统还具备了良好的数据存储和用户交互能力。
